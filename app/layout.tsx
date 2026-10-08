@@ -17,29 +17,31 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#16100c",
+  themeColor: "#141210",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.draizabellarenno.com"),
-  title: "Dra. Izabella Rennó | Advocacia & Consultoria Jurídica em Itajubá - MG",
+  metadataBase: new URL("https://www.gabrielarodriguesadv.com.br"),
+  title:
+    "Dra. Gabriela Rodrigues | Advocacia Criminal, Família e Cível em Lavras - MG",
   description:
-    "Advocacia estratégica, rigor técnico e atendimento dedicado conduzido pela Dra. Izabella Rennó (OAB/MG 201.285). Formação HarvardX em Direito Contratual, Cível, Consumidor, Bancário, Família e Trabalhista. Atendimento presencial no Ed. Santa Clara em Itajubá e on-line em todo o Brasil.",
+    "Defesa técnica de alta precisão, rigor analítico e dedicação artesanal conduzida pela Dra. Gabriela Rodrigues (Lhorrana & Rodrigues Advocacia). Atuação especializada em Direito Criminal, Família e Cível. Atendimento presencial na R. Firmino Sales, 491, Centro de Lavras - MG e on-line para todo o Brasil. Classificação 5,0 estrelas no Google (92 avaliações).",
   keywords: [
-    "Dra. Izabella Rennó",
-    "Izabella Rennó Advocacia",
-    "advogada em Itajubá",
-    "Edifício Santa Clara Itajubá",
-    "OAB MG 201285",
-    "direito civil Itajubá",
-    "contratos HarvardX",
-    "direito bancário e consumidor",
-    "direito de família e sucessões",
-    "advocacia especializada Minas Gerais",
+    "Dra. Gabriela Rodrigues",
+    "Gabriela Rodrigues Advogada",
+    "Lhorrana e Rodrigues Advocacia",
+    "Advogada Criminalista Lavras MG",
+    "Advocacia Criminal Especializada",
+    "Direito de Família Lavras",
+    "Direito Cível Lavras",
+    "Advogado em Lavras MG",
+    "Audiência de Custódia Lavras",
+    "Tribunal do Júri Lavras",
+    "Contratos e Assessoria Jurídica Minas Gerais",
   ],
-  authors: [{ name: "Dra. Izabella Rennó Del-Ducca de Souza" }],
-  creator: "Izabella Rennó Advocacia",
-  publisher: "Izabella Rennó Advocacia",
+  authors: [{ name: "Dra. Gabriela Rodrigues" }],
+  creator: "Lhorrana & Rodrigues Advocacia e Assessoria Jurídica",
+  publisher: "Dra. Gabriela Rodrigues - Escritório de Advocacia",
   formatDetection: {
     telephone: true,
     address: true,
@@ -51,17 +53,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.draizabellarenno.com",
-    title: "Dra. Izabella Rennó | Advocacia de Alta Precisão em Itajubá - MG",
+    url: "https://www.gabrielarodriguesadv.com.br",
+    title:
+      "Dra. Gabriela Rodrigues | Advocacia e Assessoria Jurídica em Lavras - MG",
     description:
-      "Advocacia estratégica com dedicação exclusiva a cada causa. Atendimento presencial em Itajubá - MG e on-line para todo o Brasil.",
-    siteName: "Izabella Rennó Advocacia",
+      "Defesa técnica com dedicação artesanal a cada caso. Avaliação máxima de 5,0 estrelas no Google com 92 avaliações. Atendimento presencial em Lavras - MG e on-line para todo o Brasil.",
+    siteName: "Lhorrana & Rodrigues — Advocacia e Assessoria Jurídica",
     images: [
       {
         url: "/logo.png",
-        width: 1200,
-        height: 410,
-        alt: "Izabella Rennó Advocacia",
+        width: 1774,
+        height: 887,
+        alt: "Lhorrana & Rodrigues — Advocacia e Assessoria Jurídica",
       },
     ],
   },

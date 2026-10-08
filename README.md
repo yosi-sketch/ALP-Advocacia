@@ -1,6 +1,7 @@
-# Izabella Rennó Advocacia
+# Dra. Gabriela Rodrigues - Escritório de Advocacia
+## Lhorrana & Rodrigues — Advocacia e Assessoria Jurídica
 
-Site institucional de alto padrão da **Dra. Izabella Rennó Del-Ducca de Souza** (OAB/MG 201.285), escritório sediado no Edifício Santa Clara em Itajubá - MG, com atendimento presencial e on-line para todo o Brasil.
+Site institucional de alto padrão da **Dra. Gabriela Rodrigues**, escritório sediado na R. Firmino Sales, 491 - Centro, Lavras - MG, com atendimento presencial e on-line para todo o Brasil.
 
 ## Desenvolvimento
 
