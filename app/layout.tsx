@@ -21,27 +21,33 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.gabrielarodriguesadv.com.br"),
+  metadataBase: new URL("https://www.advocaciaalp.com.br"),
   title:
-    "Dra. Gabriela Rodrigues | Advocacia Criminal, Família e Cível em Lavras - MG",
+    "ALP Advocacia e Consultoria | Três Corações - MG | Dra. Ana Letícia Pereira",
   description:
-    "Defesa técnica de alta precisão, rigor analítico e dedicação artesanal conduzida pela Dra. Gabriela Rodrigues (Lhorrana & Rodrigues Advocacia). Atuação especializada em Direito Criminal, Família e Cível. Atendimento presencial na R. Firmino Sales, 491, Centro de Lavras - MG e on-line para todo o Brasil. Classificação 5,0 estrelas no Google (92 avaliações).",
+    "Soluções jurídicas estratégicas com alto rigor técnico e atendimento humano conduzidas pela Dra. Ana Letícia Pereira na ALP Advocacia e Consultoria. Especialistas em Direito de Trânsito, Família, Cível, Previdenciário e Consumidor. Sede no Centro de Três Corações - MG (R. Joaquim Bento Carvalho, 108, Sala 2) e atendimento on-line em todo o Brasil. Avaliação máxima 5,0 estrelas no Google.",
   keywords: [
-    "Dra. Gabriela Rodrigues",
-    "Gabriela Rodrigues Advogada",
-    "Lhorrana e Rodrigues Advocacia",
-    "Advogada Criminalista Lavras MG",
-    "Advocacia Criminal Especializada",
-    "Direito de Família Lavras",
-    "Direito Cível Lavras",
-    "Advogado em Lavras MG",
-    "Audiência de Custódia Lavras",
-    "Tribunal do Júri Lavras",
-    "Contratos e Assessoria Jurídica Minas Gerais",
+    "ALP Advocacia e Consultoria",
+    "ALP Advocacia",
+    "Dra. Ana Letícia Pereira",
+    "Advogada Três Corações MG",
+    "Advocacia Três Corações",
+    "Direito de Trânsito Três Corações",
+    "Suspensão de CNH Três Corações",
+    "Direito de Família Três Corações",
+    "Divórcio e Pensão Três Corações",
+    "Direito Previdenciário INSS Três Corações",
+    "Aposentadoria e BPC LOAS Três Corações",
+    "Direito Cível Três Corações",
+    "Direito do Consumidor Três Corações",
+    "Consultoria Jurídica Três Corações",
   ],
-  authors: [{ name: "Dra. Gabriela Rodrigues" }],
-  creator: "Lhorrana & Rodrigues Advocacia e Assessoria Jurídica",
-  publisher: "Dra. Gabriela Rodrigues - Escritório de Advocacia",
+  authors: [
+    { name: "Dra. Ana Letícia Pereira" },
+    { name: "ALP Advocacia e Consultoria" },
+  ],
+  creator: "ALP Advocacia e Consultoria",
+  publisher: "ALP Advocacia e Consultoria",
   formatDetection: {
     telephone: true,
     address: true,
@@ -53,18 +59,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.gabrielarodriguesadv.com.br",
+    url: "https://www.advocaciaalp.com.br",
     title:
-      "Dra. Gabriela Rodrigues | Advocacia e Assessoria Jurídica em Lavras - MG",
+      "ALP Advocacia e Consultoria | Soluções Jurídicas Estratégicas em Três Corações - MG",
     description:
-      "Defesa técnica com dedicação artesanal a cada caso. Avaliação máxima de 5,0 estrelas no Google com 92 avaliações. Atendimento presencial em Lavras - MG e on-line para todo o Brasil.",
-    siteName: "Lhorrana & Rodrigues — Advocacia e Assessoria Jurídica",
+      "Atuação jurídica com excelência técnica, ética intransigente e dedicação artesanal a cada causa. Nota 5,0 estrelas no Google. Atendimento presencial em Três Corações e digital para todo o país.",
+    siteName: "ALP Advocacia e Consultoria",
     images: [
       {
         url: "/logo.png",
         width: 1774,
         height: 887,
-        alt: "Lhorrana & Rodrigues — Advocacia e Assessoria Jurídica",
+        alt: "ALP Advocacia e Consultoria",
       },
     ],
   },
@@ -75,11 +81,63 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: "ALP Advocacia e Consultoria",
+    alternateName: "ALP Advocacia",
+    founder: {
+      "@type": "Person",
+      name: "Dra. Ana Letícia Pereira",
+      jobTitle: "Advogada e Sócia-Fundadora",
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "R. Joaquim Bento Carvalho, 108 - Sl 2 - Centro",
+      addressLocality: "Três Corações",
+      addressRegion: "MG",
+      postalCode: "37410-000",
+      addressCountry: "BR",
+    },
+    telephone: "+55-35-99190-6280",
+    url: "https://www.advocaciaalp.com.br",
+    image: "https://www.advocaciaalp.com.br/logo.png",
+    priceRange: "$$",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "30",
+    },
+    areaServed: ["Três Corações", "Minas Gerais", "Brasil"],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+  };
+
   return (
     <html
       lang="pt-BR"
       className={`${bodyFont.variable} ${displayFont.variable} scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-screen overflow-x-clip bg-ivory font-sans text-ink antialiased selection:bg-brand-700 selection:text-white">
         {children}
       </body>
